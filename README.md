@@ -47,7 +47,6 @@ Check "Add python.exe to PATH".
 4. Run ```.venv\Scripts\activate``` to activate virtual environment.
 5. Run ```pip install -r requirements.txt`` to install packages.
 6. Run ```uvicorn main:app --reload``` to turn on the server.
-    ```
 7. You should allow TCP traffic on port 8000
 
 Visit https://xx.xx.xx.xx:8000/docs and enjoy Llama3-8b-instruct model.
