@@ -30,3 +30,24 @@ If it is not installed yet, you can download in https://developer.nvidia.com/cud
 ### Install Python
 
 Download Python in https://www.python.org/downloads/
+
+Check "Add python.exe to PATH".
+
+
+## How to Run
+
+1. Clone the repository with ```git clone```
+
+2. Copy .env.example and rename it as .env
+
+    You should set our HuggingFace access token with write permission there. To get access token, please follow this link:
+    https://huggingface.co/docs/hub/en/security-tokens
+
+3. Run ```python -m venv .venv``` to create virtual environment.
+4. Run ```.venv\Scripts\activate``` to activate virtual environment.
+5. Run ```pip install -r requirements.txt`` to install packages.
+6. Run ```uvicorn main:app --reload``` to turn on the server.
+    ```
+7. You should allow TCP traffic on port 8000
+
+Visit https://xx.xx.xx.xx:8000/docs and enjoy Llama3-8b-instruct model.
