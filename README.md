@@ -38,9 +38,9 @@ Check "Add python.exe to PATH".
 
 Download Nginx in http://nginx.org/en/download.html
 
-Extract zip file and modify conf/nginx.conf with nginx.conf.example and rename it as nginx.conf
+Extract zip file and modify ```conf/nginx.conf``` with ```nginx.conf.example``` and rename it as ```nginx.conf```.
 
-Edit valid ssl_certificate and ssl_certificate_key
+Update ```ssl_certificate``` and ```ssl_certificate_key``` properties in ```nginx.conf``` with your valid cert and key file paths.
 
 
 ## How to Run
