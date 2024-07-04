@@ -34,6 +34,15 @@ Download Python in https://www.python.org/downloads/
 Check "Add python.exe to PATH".
 
 
+### Install Nginx
+
+Download Nginx in http://nginx.org/en/download.html
+
+Extract zip file and modify conf/nginx.conf with nginx.conf.example and rename it as nginx.conf
+
+Edit valid ssl_certificate and ssl_certificate_key
+
+
 ## How to Run
 
 1. Clone the repository with ```git clone```
@@ -47,6 +56,9 @@ Check "Add python.exe to PATH".
 4. Run ```.venv\Scripts\activate``` to activate virtual environment.
 5. Run ```pip install -r requirements.txt`` to install packages.
 6. Run ```uvicorn main:app --reload``` to turn on the server.
-7. You should allow TCP traffic on port 8000
+    
+    You should allow TCP traffic on port 8000 and 443 on AWS account and Windows Firewall settings.
 
-Visit https://xx.xx.xx.xx:8000/docs and enjoy Llama3-8b-instruct model.
+7. Run nginx.exe
+
+Visit https://ai.staffpage.com/docs and enjoy Llama3-8b-instruct model.
